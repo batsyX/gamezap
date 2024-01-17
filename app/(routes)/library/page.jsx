@@ -23,7 +23,7 @@ const Page = () => {
              {
                  games.map((game)=>(
                   heartList.includes(game.title)?
-                  <GameCard game={game}/>:null
+                  <GameCard key={game._id} game={game}/>:null
                  ))
              }
               </div>
