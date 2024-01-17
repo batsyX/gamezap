@@ -1,27 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://db.onlinewebfonts.com/c/b2932945dbc71a0a2a4c03dd305cfe3a?family=BauhausBold');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+ 
+*{
+  margin: 0;
+  padding: 0;
 }
+html,
+body,
+:root{
+  height: 100%;
+}
+:root{
+  --primary:#0d171f;
+  --second:#0998a8;
+  --bgColor:#192938;
+}
+h1,h2,h3,h4,p{
+  color: white;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+}
+body{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: var(--bgColor);
+  overflow: hidden
+}
+@layer base {
+  * {
+    @apply border-border;
   }
+  body {
+    @apply bg-background text-foreground;
+  }
+.cus-border{
+  border-radius: 15px 4px 15px 4px;
 }
+}
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 20px;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: var(--primary);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--second);
+    border-radius: 100vh;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  }
+  .swiper-slide.swiper-slide-active iframe{
+    transform: scale(1);
+  }
 }
