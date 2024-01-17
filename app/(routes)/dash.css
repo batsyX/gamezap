@@ -18,3 +18,10 @@
     transition: .5s;
 
 }
+@media screen and (max-width: 460px){
+    .dash{
+        padding: 0;
+        gap:5px ;
+    }
+    
+}
