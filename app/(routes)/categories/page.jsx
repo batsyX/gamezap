@@ -69,7 +69,7 @@ const Page = () => {
              {
                  games.map((game)=>(
                   current.find((category)=>category.active===true).name==="All"?
-                  <GameCard game={game}/>:game.category===current.find((category)=>category.active===true).name?<GameCard game={game}/>:null
+                  <GameCard key={game._id} game={game}/>:game.category===current.find((category)=>category.active===true).name?<GameCard key={game._id} game={game}/>:null
                  ))
              }
               </div>
