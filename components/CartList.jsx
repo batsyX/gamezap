@@ -3,7 +3,7 @@ import { useProviderContext } from "@/context/Provider"
 import { DeleteIcon, Trash, TrashIcon } from "lucide-react";
 
 
-const cartList = ({game}) => {
+const CartList = ({game}) => {
     const {cart,setCart}=useProviderContext();
     const {total,setTotal}=useProviderContext();
     const handleCart=()=>{
@@ -55,4 +55,4 @@ const cartList = ({game}) => {
   )
 }
 
-export default cartList
+export default CartList
