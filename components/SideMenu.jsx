@@ -59,7 +59,7 @@ const SideMenu = () => {
             }
         </Link>
 
-        <div className='absolute left-0 bottom-0 p-3'>
+        <div className='absolute left-0 bottom-0 p-3 max-sm:hidden'>
            <button onClick={()=>setIsOpen((prev)=>!prev)} className='text-white '>
             <Settings2Icon/>
            </button>
