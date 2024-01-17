@@ -26,7 +26,7 @@ const Page = () => {
              {
                  games.map((game)=>(
                   cart.includes(game.title) && 
-                  <CartList game={game}/>
+                  <CartList key={game._id} game={game}/>
                  ))
              }
 
