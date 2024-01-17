@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 import { ArrowBigRightIcon } from "lucide-react"
 import Link from "next/link"
 
-const page = () => {
+const Page = () => {
     const {total,setTotal} =useProviderContext();
     const {cart}=useProviderContext();
     const {games}=useGameContext();
@@ -48,4 +48,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

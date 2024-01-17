@@ -36,7 +36,7 @@ const categories=[
 
 
 
-const page = () => {
+const Page = () => {
   const {games}=useGameContext();
   const [current,setCurrent]=useState(categories)
  
@@ -82,4 +82,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

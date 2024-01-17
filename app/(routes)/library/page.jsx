@@ -6,7 +6,7 @@ import { useProviderContext } from "@/context/Provider";
 import { useGameContext } from "@/context/GameProvider";
 import GameCard from "@/components/GameCard";
 
-const page = () => {
+const Page = () => {
   const {heartList} = useProviderContext();
   const {games}=useGameContext();
   return (
@@ -32,4 +32,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

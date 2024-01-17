@@ -6,7 +6,7 @@ import * as animationData from "@/public/lotties/AnimationLanding.json"
 import { Webhook } from "lucide-react";
 import {motion} from "framer-motion"
 
-const page = () => {
+const Page = () => {
   const defaultOptions = {
 		
 		loop: true,
@@ -68,4 +68,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
