@@ -59,7 +59,7 @@ const GameSwiper = ({games})=>{
                                 <h2 className=' text-4xl mb-2'>{game.title}</h2>
                                 
                                 <div className="buttons flex gap-4 items-center">
-                                    <a className='px-6 py-2 bg-[var(--second)] rounded-xl ' href="#">Order</a>
+                                    <a className='px-6 py-2 bg-[var(--second)] rounded-xl ' target="_blank" href={game.trailer}>FullScreen Trailer</a>
                                     <div className=' cursor-pointer' href="" >
                                                                                 
                                         <span onClick={handleToggle} className={`pause ${active?'active':null}`}><PauseIcon/></span>
